@@ -97,13 +97,28 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 2.5rem;
+            gap: 3rem;
             margin-top: 4rem;
+            flex-wrap: wrap; /* mobile friendly */
         }
-
-        .hero-progress>div {
+        
+        .hero-progress .stat {
             text-align: center;
             width: 160px;
+        }
+        
+        .hero-progress .stat h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0;
+            color: #0A66C2; /* accent color */
+        }
+        
+        .hero-progress .stat p {
+            font-size: 14px;
+            color: #666;
+            margin-top: 6px;
+            letter-spacing: 0.5px;
         }
 
 
@@ -682,17 +697,17 @@
             <p></p>
             <a href="#about" class="cta-button">See More About Me</a>
             <div class="hero-progress">
-                <div>
+                <div class="stat">
                     <h2>300+</h2>
-                    <p>LeetCode Solved</p>
+                    <p>LeetCode Problems Solved</p>
                 </div>
-                <div>
-                    <h2>1.5+</h2>
-                    <p>Years Experience</p>
+                <div class="stat">
+                    <h2>1.5</h2>
+                    <p>Years of Experience</p>
                 </div>
-                <div>
-                    <h2>3</h2>
-                    <p>Projects</p>
+                <div class="stat">
+                    <h2>3+</h2>
+                    <p>Scalable Projects</p>
                 </div>
             </div>
         </div>
